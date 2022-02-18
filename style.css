@@ -1,0 +1,227 @@
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}*/
+.picon {
+    width: 20px;
+}
+
+.wrapper {
+    background-color: #999;
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    padding: 0 300px;
+}
+
+.border {
+    border-right: 1px solid #000;
+    padding: 10px 30px;
+}
+
+.box {
+    padding-left: 0;
+}
+
+.in {
+    width: 30px;
+}
+
+.input {
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 3px 5px;
+}
+
+.search__wrap {
+    position: relative;
+    
+}
+.search-sign {
+    width: 20px;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+}
+
+.menu {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu__item {
+    margin-right: 50px;
+    transition: 0.1s all linear;
+}
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.icon__wrap {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.icon__wrap img {
+    margin-right: 50px;
+}
+.icon__wrap img:last-child {
+    margin-right: 0;
+}
+
+.user__wrap {
+    margin: 10px 0 10px 30px;
+    display: inline-block;
+    border: 3px solid #0af;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user__wrap img {
+    transform: translateY(4px);
+    width: 60px;
+}
+
+.menu-02 {
+    width: 100%;
+}
+
+.menu-02 .menu {
+    padding-bottom: 10px;
+}
+
+
+                                /*hover and animation*/
+
+.menu__item:hover {
+    text-shadow: 1px 1px #000;
+}
+
+.icon__wrap img {
+    animation: roll 2s infinite;
+    animation-delay: 0;
+    
+}
+
+.icon__wrap img:hover {
+    animation-play-state: paused;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+                                /*hover and animation ends*/
+
+.bottom {
+    padding: 38px 300px;
+    background-image: url('img/south wind.jpg');
+}
+
+.bottom__wrap {
+    background-color: #fff;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 2px solid #aaa;
+}
+
+.post {
+    width: 32%;
+}
+
+.postimg {
+    width: 400px;
+    height: 550px;
+}
+
+.states {
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postext {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.chevron-btns {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picture {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #000;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.right {
+    transform: rotateZ(180deg);
+    margin-left: 5px;
+}
+
+.data {
+    font-size: 15px;
+    opacity: 0.5;
+}
